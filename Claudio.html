@@ -17,11 +17,19 @@
  	 .innerHTML = resultado;};
  </script> 
  
- <script> 	function valor() { 	var numero1 = 00;
+ <script> 	function valor() { 	var numero1 = 0.125;
  	 var numero2 = 00; 
  	 var resultad = numero1 + numero2; 	document.getElementById('resultad')
  	 .innerHTML = resultad;};
  </script> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  <script>
  var button = document.querySelector("trans");
 
@@ -30,7 +38,15 @@
 var nome =("QUAL VALOR DESEJA SACAR?"); 
  alert(" VOCE NAO TEM VALOR DISPONIVEL PARA SAQUE.\nAGUARDE O PROXIMO RENDIMENTO PARA SAQUE!");
 };
+ </script>
+ <script>
+ function emprestimo (){
+ window.alert ("VOCE TEM R$ 100.00 DISPONIVEL PARA EMPRESTIMO.\n\n PARA LIBERAR\n\n ADICIONE(15 PESSOAS)\nCOM SUA INDICACAO");
+ };
+ </script>
+ <script>
  
+ alert(" VOCE TEM VALOR DISPONIVEL PARA SAQUE.!");
  </script>
  </head>
   <body> 
@@ -49,7 +65,10 @@ var nome =("QUAL VALOR DESEJA SACAR?");
 <a href="https://link.mercadopago.com.br/multijogo">
 <string style="background: white; border-radius: 4px; padding: 19px 34px; cursor: pointer; color: black; border: none; font-size:px margin-right:22;">DEPOSITO</button>    </a>
    
-      <input onclick="trans ()"type="button" value="SACAR"  id ="trans"/>
+      
+      
+      <a href="saqueClaudio.html">
+      <input onclick="tran ()"type="button" value="SACAR"  id ="trans"/></a>
       
       
       <br>
@@ -68,10 +87,23 @@ saldo: --/--/ 00:10      valor:00.00
 <td><button class="seg">SEGURO</button>
 <td>  <a class="lin"href="https://m.uber.com/?utm_source=homescreen&utm_medium=shortcut">UBER</button>
 <td><button class="n99">99</button>
+<tr>
+<td><input type="button" class="emp" onclick="emprestimo()"value="EMPRÉSTIMO">
+<td><input type="button" class="emp" value="APOSTA">
 
-</table>
+<td><input type="button" class="emp" value="NOVIDADE">
+
+</table><br>
+<a href="indique_ganhe.html">
+<input type="button" class="indic" value="INDICACAO"></a>
+
+
+
 <br>
+
+
 <table border="8"style ="background-color:lime;">
+<br>
 <tr>
 <th>VALORES</th>
 <th>DIAS</th>
@@ -208,12 +240,23 @@ saldo: --/--/ 00:10      valor:00.00
     font-size:10px;
     
     }
-    
-    
+    .emp {
+        width:80px;
+        height:60px;
+        border-radius:50%;
+        font-size:10;
+        
+    }
+    .indic {
+        width:140px;
+        height:40px;
+        border-radius:%;
+        font-size:10;
+    }
    
     </style>
     </html>
     
     
     
-     
+      
