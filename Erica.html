@@ -1,3 +1,4 @@
+
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT-BR">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -30,7 +31,14 @@
 var nome =("QUAL VALOR DESEJA SACAR?"); 
  alert(" VOCE NAO TEM VALOR DISPONIVEL PARA SAQUE.\nAGUARDE O PROXIMO RENDIMENTO PARA SAQUE!");
 };
- 
+ </script>
+ <script>
+ function emprestimo (){
+     alert ("VOCE NAO TEM VALOR DISPONIVEL PARA EMPRESTIMO");
+ };
+ </script>
+ <script>
+ alert(" VOCE TEM VALOR DISPONIVEL PARA SAQUE.!");
  </script>
  </head>
   <body> 
@@ -49,7 +57,10 @@ var nome =("QUAL VALOR DESEJA SACAR?");
 <a href="https://link.mercadopago.com.br/multijogo">
 <string style="background: white; border-radius: 4px; padding: 19px 34px; cursor: pointer; color: black; border: none; font-size:px margin-right:22;">DEPOSITO</button>    </a>
    
-      <input onclick="trans ()"type="button" value="SACAR"  id ="trans"/>
+      
+      
+      <a href="saqueErica.html">
+      <input onclick="tran ()"type="button" value="SACAR"  id ="trans"/></a>
       
       
       <br>
@@ -68,7 +79,9 @@ saldo: --/--/ 00:10      valor:00.00
 <td><button class="seg">SEGURO</button>
 <td>  <a class="lin"href="https://m.uber.com/?utm_source=homescreen&utm_medium=shortcut">UBER</button>
 <td><button class="n99">99</button>
-
+<tr>
+<td><input type="button" class="emp" onclick="emprestimo()"value="EMPRÉSTIMO">
+<td><input type="button" class="emp" onclick="emprestimo()"value="APOSTA">
 </table>
 <br>
 <table border="8"style ="background-color:lime;">
@@ -208,7 +221,12 @@ saldo: --/--/ 00:10      valor:00.00
     font-size:10px;
     
     }
-    
+    .emp {
+        width:80px;
+        height:60px;
+        border-radius:50%;
+        
+    }
     
    
     </style>
