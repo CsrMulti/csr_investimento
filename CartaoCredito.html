@@ -14,7 +14,7 @@
 <div class="validade">validade</div>
 <div class="data">00/00</div>
 <img src="cartao.jpg" class="foto"></a>
-
+<img src="cartao.jpg" class="master"></a>
 </div>
 
 <br><br>
@@ -37,25 +37,32 @@ height: 180px;
 margin:0 auto;
 border:1px solid red;
 position :relative;
-background:teal
+background:teal;
+overflow:hidden;
+justify-content: center;
+
 }
 .numero {
     position: absolute;
     margin-left:50px;
     bottom:50;
     font-size:30;
-    
+    justify-content: center;
 }
 .nome{
     position:absolute;
     margin-left:100px;
     bottom:2;
     font-size:20px;
+    justify-content: center;
 }
 .foto {
     position:absolute;
-    width:70px;
-    height:70px;
+    justify-content: center;
+    width:100%;
+    height:145px;
+    bottom:0;
+    
     
 }
 .validade {
@@ -82,7 +89,7 @@ h5 {
     background:pink;
 }
 body {
-    background:pink
+    background:pink;
 }
 .nom{
     position:absolute;
@@ -101,9 +108,17 @@ body {
     bottom:120px;
     font-size:20px;
     margin-left:100px;
-    background:red;
+    background:;
     color:white;
     border-radius:100px;
+}
+.master {
+    position:absolute;
+    width:60px;
+    height:35px;
+    border:1px solid black;
+    bottom: 0px;
+    
 }
 </style>
 <script>
@@ -111,3 +126,5 @@ function valor (){
 alert ("0.00");
 }
 </script>
+
+
