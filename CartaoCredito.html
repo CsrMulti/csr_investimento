@@ -1,17 +1,41 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//PT-BR">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+<head> <title>csr-INVESTIMENTO</title> <meta charset="utf-8">
+</head> <body><h5></h5>
+
 <div class="cartao">
-<div class="nome">xxxxx xxxxx </div>
+<button class="valor" onclick ="valor()" >valor disponivel</button>
+
+<div class="nBanco">CSR-INVESTIR</div>
+<div class="nome">Erica maciel silva</div>
 <div class="numero"> 000.000.000.000</div>
 <div class="validade">validade</div>
-<div class="data">00.00</div>
+<div class="data">00/00</div>
 <img src="#" class="foto"></a>
 
 </div>
 <br>
 <button class="codigo" >codigo de segurança</button>
+
+<br><br>
+
+<div class="cartao">
+<div class="nom">CODIGO DE SEGURANCA</div>
+<div class="numer"> XXXX</div>
+
+<img src="#" class="foto"></a>
+
+</div>
+<br><br>
+<button class="codigo" >MOSTRA CODIGO</button>
+
+
 <style>
 .cartao {
 width:100%;
-height: 150px;
+height: 180px;
 margin:0 auto;
 border:1px solid red;
 position :relative;
@@ -27,7 +51,7 @@ background:teal
 .nome{
     position:absolute;
     margin-left:100px;
-    bottom:0;
+    bottom:2;
     font-size:20px;
 }
 .foto {
@@ -50,6 +74,41 @@ background:teal
 }
 .codigo {
 
-margin-left:30%;
+margin-left:100px;
+}
+.valor {
+    position:absolute;
+    margin-left:70%;
+}
+h5 {
+    background:pink;
+}
+body {
+    background:pink
+}
+.nom{
+    position:absolute;
+    margin-left:50px;
+    bottom:2;
+    font-size:20px;
+}
+.numer {
+    position: absolute;
+    margin-left:130px;
+    bottom:50;
+    font-size:30;
+}
+.nBanco {
+    position: absolute;
+    bottom:120px;
+    font-size:20px;
+    margin-left:100px;
+    background:red;
+    color:white 
 }
 </style>
+<script>
+function valor (){
+alert ("0.00");
+}
+</script>
