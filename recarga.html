@@ -71,6 +71,8 @@ PARA QUAL NUMERO DESEJA FAZER A RECARGA<br><br>
 body {
     background:black;
     color:white;
+    height:100%;
+    justify content:center;
 }
 .geral {
     position:relative;
@@ -79,7 +81,7 @@ body {
     margin-left:110px;
     
 }
-.box {
+.box {position:relative;
     width:80%;
     height:30px;
     border:2px solid red;
@@ -88,17 +90,14 @@ body {
     margin-left:px;
 }
 .recar{
-    position:absolute;
-     width:35%;
+    position:relative;
+     width:40%;
     height:50px;
-    margin-left:20px;
-    bottom:120;
-    
-    
-    
+    margin-left:10px;
+    bottom:5;    
 }
 .btn {
-    position:absolute;
+    position:relative;
     width:90%;
     height:50px;
     margin-left:10px;
@@ -112,16 +111,19 @@ h {
     margin-left:5px;
 }
 .rvalor {
-    position:absolute;
-     width:35%;
+    position:relative;
+     width:40%;
     height:50px;
     margin-left:200px;
-    bottom:120;
+    bottom:55;
+    
+}
+.box focu {
     
 }
 </style>
 <script>
 function funcao1(){
-    alert ("voce nao tem saldo para recarregar");
+    alert ("VOCE NAO TEM SALDO PARA RECARREGAR.");
 }
 </script>
