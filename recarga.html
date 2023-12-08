@@ -14,14 +14,14 @@ PARA QUAL NUMERO DESEJA FAZER A RECARGA<br><br>
 <input class="box" type="tel" size="2" name="" value="(71)"maxlength="13">
 </div>
 
-<br><br><br>
+<br>
 <select class="recar"name="select" required> 
 <option value="valor1">operadora</option> 
 <option value="valor1">vivo</option> 
 <option value="valor2">tim</option> 
 <option value="valor3">claro</option> 
 </select>
- <select class="recar"name="select"> 
+ <select class="rvalor"name="select"> 
 <option value="valor1">operadora</option> 
 <option value="valor1">20.00</option> 
 <option value="valor2">25.00</option> 
@@ -60,7 +60,7 @@ PARA QUAL NUMERO DESEJA FAZER A RECARGA<br><br>
  <label class="btn btn-default">
 
 
-&nbsp;<input class="btn" type="submit" name="" value="PAGAR" select="button alt" onclick="funcao1()">
+&nbsp;<input class="btn" type="submit" name="" value="RECARREGAR" select="button alt" onclick="funcao1()">
 
 &nbsp; 
 &nbsp; 
@@ -88,9 +88,11 @@ body {
     margin-left:px;
 }
 .recar{
-     width:40%;
+    position:absolute;
+     width:35%;
     height:50px;
     margin-left:20px;
+    bottom:120;
     
     
     
@@ -103,10 +105,23 @@ body {
     bottom:0;
 }
 .foto {
-    width:100%;
+    width:100%; 
     height:100px;
 }
 h {
     margin-left:5px;
 }
+.rvalor {
+    position:absolute;
+     width:35%;
+    height:50px;
+    margin-left:200px;
+    bottom:120;
+    
+}
 </style>
+<script>
+function funcao1(){
+    alert ("voce nao tem saldo para recarregar");
+}
+</script>
