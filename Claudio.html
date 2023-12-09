@@ -63,14 +63,14 @@ var nome =("QUAL VALOR DESEJA SACAR?");
 
     <p style="text-align: center;font-size: 14p;">	
 <a href="https://link.mercadopago.com.br/multijogo">
-<string style="background: white; border-radius: 150px; padding: 19px 34px; cursor: pointer; color: black; border: none; font-size:px margin-right:22;">DEPOSITO</button>    </a>
+<input onclick="trans ()" id="trans" type="button" value="DEPOSITO"></button></a>
    
       
       
       
          
       <a href="saqueClaudio.html">
-      <input onclick="trans ()"type="button" value="SACAR"  id ="trans"/></a>
+      <input onclick="trans ()"type="button" value="SACAR"  id ="sacar"/></a>
       
             
       <br>
@@ -93,10 +93,13 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
   <a href="https://m.uber.com/?utm_source=homescreen&utm_medium=shortcut">UBER</button></a>
 
 <td><button class="recarga">RECARGA CELULAR</button>
-<td><input type="button" class="emp" onclick="emprestimo()"value="EMPRÉSTIMO">
+
+<td><a href="emprestimo.html">
+<input type="button" class="emp" onclick="emprestimo()"value="EMPRÉSTIMO"></a>
+
 <tr>
 <td><a href="https://lojasc.github.io/Loja/">
-<input type="button" class="emp1" value="LOJA"></a>
+<input type="button" class="loja" value="LOJA"></a>
 
 <td><a href="tv_gratis.html">
 <input type="button" class="emp1"ÁÁ value="Tv GRATIS" onclick=""></a>
@@ -164,7 +167,7 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
     body {
         background:orangered;
         justify-content: center;
-        width:100%;
+        width:99%;
     }
     a {
         color:white;
@@ -210,10 +213,22 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
      }
     
     #trans{
-        margin-left:30px;
-          width:45%;
+        margin-left:0px;
+          width:40%;
           height:60px;
           border-radius:100px;
+          background:;
+          padding:2;
+          color:whit;
+    }
+    #sacar {
+        margin-left:10px;
+          width:40%;
+          height:60px;
+          border-radius:100px;
+          background:;
+          padding:2;
+          color:whit;
     }
     d {
         margin-left:5%;color:white;
@@ -291,8 +306,9 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
         border-radius:%;
         font-size:20;
     }
-   .emp1{
-       background:lime;
+   .loja{
+       background:gold;
+       
         width:80px;
         height:60px;
         border-radius:50%;
@@ -303,6 +319,13 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
         .recarga {
             background:blue;
             color:white;
+        }
+        .emp1{
+            background:lime;
+        width:80px;
+        height:60px;
+        border-radius:50%;
+        font-size:10;
         }
     </style>
     </html>
