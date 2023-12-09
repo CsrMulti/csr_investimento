@@ -89,8 +89,10 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
 </textarea>
 <z>LOJA<br><table class="lj" border="">
 <td><button class="seg">SEGURO</button>
-<td>  <a class="lin"href="https://m.uber.com/?utm_source=homescreen&utm_medium=shortcut">UBER</button>
-<td><a href="recarga.html"><button class="n99">RECARGA CELULAR</button> </a>
+<td><button class="lin">
+  <a href="https://m.uber.com/?utm_source=homescreen&utm_medium=shortcut">UBER</button></a>
+
+<td><button class="recarga">RECARGA CELULAR</button>
 <td><input type="button" class="emp" onclick="emprestimo()"value="EMPRÉSTIMO">
 <tr>
 <td><a href="https://lojasc.github.io/Loja/">
@@ -166,6 +168,7 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
     }
     a {
         color:white;
+        
     }
     #resultad {
         margin-left:%;
@@ -257,14 +260,15 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
     .lin {
        width:80px;
         height:60px;
-        background: black; border-radius: 100%; padding: 20px 20px; cursor: pointer; color: white; border: none; font-size:px; margin-right:22;
+        background: black;
+        border-radius: 50%; 
+        color: white;
+        font-size:px; 
     }
     .lj{
          width:50%;
          position:relative;
          justify-content: center;
-         
-        
     }
     r {
         margin-left:70%;
@@ -294,6 +298,12 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
         border-radius:50%;
         font-size:10;
         
+        }
+        
+        .recarga {
+            background:blue;
+            color:white;
+        }
     </style>
     </html>
     
