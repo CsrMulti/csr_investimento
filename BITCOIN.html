@@ -6,12 +6,12 @@
 <body><h3></h3><h3>
 <img src="bitcoin.jpg" class="foto">
 
-saldo 0.00
-<div class=" geral">
+valor atual R$ 108.637.88
+<div class=" geral"><br>
 <div class="recarga">MERCADO BITCOIN
 </div><br><br>
-QUAL VALOR VOCE DESEJA COMPRA DE BITCOIN <br><br>
-<input class="box" type="tel" size="2" name="" value=""maxlength="13"required>
+<f>QUAL VALOR VOCE DESEJA COMPRA DE BITCOIN </f><br><br>
+<input class="box" type="tel" size="2" name="" value="R$"maxlength="13"required>
 </div>
 
 
@@ -44,7 +44,8 @@ QUAL VALOR VOCE DESEJA COMPRA DE BITCOIN <br><br>
 
 
 &nbsp;<input class="btn" type="submit" name="" value="COMPRAR" select="button alt" onclick="funcao1()">
-<input class="btn" type="submit" name="" value="vender" select="button alt" onclick="funcao1()">
+
+<input class="btn" type="button" name="" value="VENDER" select="button alt" onclick="funcao2()">
 
 
 &nbsp; 
@@ -63,7 +64,10 @@ body {
     position:relative;
 }
 .recarga {
-    margin-left:110px;
+    background:green;
+    margin-left:0px;
+    text-align:center;
+    bottom:90;
     
 }
 .box {position:relative;
@@ -109,9 +113,19 @@ h {
 .box focu {
     
 }
+f {
+    font-size:14px;
+    margin-left :10px;
+    border:0 auto;
+}
 </style>
 <script>
 function funcao1(){
     alert ("VOCE NAO TEM SALDO PARA RECARREGAR.");
+}
+</script>
+<script>
+function funcao2(){
+    alert-prompt ("QUANTO VOCE DESEJA VENDER.");alert("VERIFIQUE SEU SALDO DISPONIVEL")
 }
 </script>
