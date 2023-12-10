@@ -6,7 +6,7 @@
 </head> <body><h5></h5>
 <r>ERICA MACIEL</r><br>
 <r>vinculo:Er0565</r>
-<br>
+
 <v>NEW-GOLD</v><br><br>
   <d>VALOR R$ <strong id="resultado">(****)</strong><c>RENDIMENTO <strong id="resultad">(****)</strong></p>
   
@@ -17,11 +17,19 @@
  	 .innerHTML = resultado;};
  </script> 
  
- <script> 	function valor() {var numero1=0.81;
- 	 var numero2 = 0.1; 
+ <script> 	function valor() { 	var numero1=0.81;
+ 	 var numero2 = 00; 
  	 var resultad = numero1 + numero2; 	document.getElementById('resultad')
  	 .innerHTML = resultad;};
  </script> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  <script>
  var button = document.querySelector("trans");
 
@@ -33,36 +41,38 @@ var nome =("QUAL VALOR DESEJA SACAR?");
  </script>
  <script>
  function emprestimo (){
- windown.alert ("VOCE TEM R$ 100.00 DISPONIVEL PARA EMPRESTIMO.\n PARA LIBERAR\n\n ADICIONE(15 PESSOAS)\nCOM SUA INDICACAO");
+ window.alert ("VOCE TEM R$ 100.00 DISPONIVEL PARA EMPRESTIMO.\n\n PARA LIBERAR\n\n ADICIONE(15 PESSOAS)\nCOM SUA INDICACAO");
  };
  </script>
  <script>
  
- alert(" PARABÉNS\nVOCE TEM LIMITE PRE APROVADO .!");
+ alert(" VOCE TEM VALOR DISPONIVEL PARA SAQUE.!");
  </script>
  </head>
   <body> 
   
   
 
-   <input type="button" onclick="mostraResultado()" value="MOSTRA" id="botao1">
+   <input type="button" onclick="mostraResultado()" value="MOSTRA" id="botao1" />
    
    
    <input type="button" onclick="valor()" value="MOSTRA" id="botao2" />
    <br>
      
 <string>
- <p style="text-align: center;font-size: 14p;">	
+
+    <p style="text-align: center;font-size: 14p;">	
 <a href="https://link.mercadopago.com.br/multijogo">
-<string style="background: white; border-radius: 150px; padding: 19px 34px; cursor: pointer; color: black; border: none; font-size:px margin-right:22;">DEPOSITO</button>    </a>
+<input onclick="trans ()" id="trans" type="button" value="DEPOSITO"></button></a>
    
       
-   
+      
       
          
       <a href="saqueErica.html">
-      <input onclick="trans ()"type="button" value="SACAR"  id ="trans"/></a>
+      <input onclick="trans ()"type="button" value="SACAR"  id ="sacar"/></a>
       
+            
       <br>
     <ex> EXTRATO <br> <textarea readonly>
 entrada 11/10/23 17:30 valor:R$ 5.00
@@ -79,12 +89,18 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
 </textarea>
 <z>LOJA<br><table class="lj" border="">
 <td><button class="seg">SEGURO</button>
-<td>  <a class="lin"href="https://m.uber.com/?utm_source=homescreen&utm_medium=shortcut">UBER</button>
-<td><button class="n99">99</button>
-<td><input type="button" class="emp" onclick="emprestimo()"value="EMPRÉSTIMO">
+<td><button class="lin">
+  <a href="https://m.uber.com/?utm_source=homescreen&utm_medium=shortcut">UBER</button></a>
+
+<td><a href="recarga.html">
+<button class="recarga">RECARGA CELULAR</button></a>
+
+<td><a href="Emprestimo1.html">
+<input type="button" class="emp" onclick="emprestimo()"value="EMPRÉSTIMO"></a>
+
 <tr>
 <td><a href="https://lojasc.github.io/Loja/">
-<input type="button" class="emp1" value="LOJA"></a>
+<input type="button" class="loja" value="LOJA"></a>
 
 <td><a href="tv_gratis.html">
 <input type="button" class="emp1"ÁÁ value="Tv GRATIS" onclick=""></a>
@@ -147,16 +163,16 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
 <a href="REGRA.html">
 <input type="button"value="REGRA"></a><br>
     </body>
-         <style>
-    
-    
+        
+     <style>
     body {
-        background:pink;
+        background:orangered;
         justify-content: center;
-        width:100%;
+        width:99%;
     }
     a {
         color:white;
+        
     }
     #resultad {
         margin-left:%;
@@ -198,10 +214,22 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
      }
     
     #trans{
-        margin-left:30px;
-          width:45%;
+        margin-left:0px;
+          width:40%;
           height:60px;
           border-radius:100px;
+          background:;
+          padding:2;
+          color:whit;
+    }
+    #sacar {
+        margin-left:10px;
+          width:40%;
+          height:60px;
+          border-radius:100px;
+          background:;
+          padding:2;
+          color:whit;
     }
     d {
         margin-left:5%;color:white;
@@ -248,14 +276,15 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
     .lin {
        width:80px;
         height:60px;
-        background: black; border-radius: 100%; padding: 20px 20px; cursor: pointer; color: white; border: none; font-size:px; margin-right:22;
+        background: black;
+        border-radius: 50%; 
+        color: white;
+        font-size:px; 
     }
     .lj{
          width:50%;
          position:relative;
          justify-content: center;
-         
-        
     }
     r {
         margin-left:70%;
@@ -278,14 +307,28 @@ saldo  30/11/23 12:00 valor:R$ 0.28,1
         border-radius:%;
         font-size:20;
     }
-   .emp1{
-       background:lime;
+   .loja{
+       background:gold;
+       
         width:80px;
         height:60px;
         border-radius:50%;
         font-size:10;
         
+        }
+        
+        .recarga {
+            background:blue;
+            color:white;
+        }
+        .emp1{
+            background:lime;
+        width:80px;
+        height:60px;
+        border-radius:50%;
+        font-size:10;
+        }
     </style>
     </html>
     
-    
+     
