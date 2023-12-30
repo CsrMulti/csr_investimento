@@ -3,16 +3,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
-</head>
+<title>TRANSFERÊNCIA</title>
 <script>
 alert("OBRIGADA PELA PREFERÊNCIA ^.^")
-<title>TRANSFERÊNCIA</title>
 </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
 <body>
-<form action="http://formmail.kinghost.net/formmail.cgi" method="POST">
-<b>Valor Disponivel : <input type="tel" class="val"value="0,00"readonly><br><br>
- <img src="tranf_55.jpeg" width="100%" height="100px"alt="#">
+<form action="http://formmail.kinghost.net/formmail.cgi" method="POST"> 
+<p class="txt"><b>TRANSFERENCIA</p>
+<b>Valor Disponivel : <input class='valor1'type='text' id='custo1' name='custo1'value="0,00" readonly ><br><br>
+
+<img src="tranf_55.jpeg" width="100%" height="100px"alt="#">
+ 
  
 <div>
 <p class="nome"> <b>ERICA MACIEL  </p>
@@ -37,9 +40,9 @@ alert("OBRIGADA PELA PREFERÊNCIA ^.^")
   <td><input cracked type="hidden"  name="C/C 5655" value="ERICA MACIEL">
 
 
-<input class="inp_valor"type="text" size="18" name="VALOR" value=""required placeholder="VALOR">
-  
- <br><br>
+ <input  required type='number' id='valor1' class='valor' name='valor1' custo='custo1' placeholder="VALOR">
+
+ 
 
 
  <input class="btn"type="submit" name="" value="ENVIAR" onclick="funcao1()" value="Exibir Alert" >
@@ -47,58 +50,69 @@ alert("OBRIGADA PELA PREFERÊNCIA ^.^")
 
 
 
-</div>
+</div><br><br>
 
 
-<textarea  class="txtarea">
---------------------
-EXTRATO DE TRANSACAO 
----------------------
+<textarea  class="txtarea" readonly >
+-------------------------------------
+EXTRATO DE TRANSACAO BANCO CSR-INVEST
+-------------------------------------
 </textarea>
 <style>
 body {
     background:brown;
     color:white;
 }
-.inp_valor {
-    margin-left:%;
+.valor {
+    margin-right:50%;
     text-align:center;
-    width:50%;
+    width:40%;
     border-radius:100px;
-    outline:none
+    outline:none;
+    display:block;
+    position:absolute;
 }
 .lab_valor {
     margin-left:35%;
 }
 .nome {
-    margin-left:30%;
+    margin-left:15%;
 }
 .n_banco {
     margin-left:25%;
     justify-content:center;
 }
 .btn {
-    width:20%;
-    height:23px;
+    background:lightblue;
+    width:40%;
+    height:20px;
      border-radius:100px;
      outline:none;
-     margin-left:35%;
-     
+     margin-left:50%;
+     display:block;
+    position:absolute;
 }
 .txtarea {
     width:100%;
-    height:200px;
+    height:150px;
     text-align:center;
     background:black;
     color:white;
+    
 }
-.val {
+.valor1 {
     width:20%;
     text-align:center;
     border-radius:20px;
 }
-
+.txt {
+    text-align:center;
+}
 </style>
+<script>
+$(document).ready(function(){ $(".valor").on("input", function(){ var textoDigitado = $(this).val(); var inputCusto = $(this).attr("custo"); $("#"+ inputCusto).val(textoDigitado); }); });
+</script>
+
 <script>
 function funcao1()
 {
