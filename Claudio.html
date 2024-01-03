@@ -11,14 +11,14 @@
  
 <b>claudio santos<br>
 vinculo:<br>C/c90434</div>
-<br></p>
+</p>
 <h5><b>NEW-GOLD</h5>
 <p>
-  <d>VALOR R$ <strong id="resultado">(****)</strong><c>RENDIMENTO <strong id="resultad">(****)</strong></p>
+  <d>VALOR R$ <strong id="resultado"><valor>(****)</strong><c>RENDIMENTO <strong id="resultad"><valor>(****)</strong></p>
   
 
- <script> 	function mostraResultado() { 	var numero1 =2.50;
- 	 var numero2 = 2.50; 
+ <script> 	function mostraResultado() { 	var numero1 =2.500;
+ 	 var numero2 = 2.500; 
  	 var resultado = numero1 + numero2; 	document.getElementById('resultado')
  	 .innerHTML = resultado;};
  </script> 
@@ -214,11 +214,16 @@ saldo  30/13/23 12:00 valor:R$ 0.78,1
 }
 a {
         color:black;
-        
-        
     }
+
+
 #resultad {
         margin-left:%;
+        color :black;
+    }
+#resultado {
+        margin-left:%;
+        color :black;
     }
 c {
         margin-left:25%; 
@@ -235,19 +240,25 @@ h5 {
     
 #botao2{
         margin-left:55%; 
-     width:40%;
+          width:40%;
           display:block;
           position:absolute;
           border-radius:10px;
+          border:none;
+          outline:none;
     }
    
-    
+valor {
+    color:white;
+}    
 #botao1 {
     width:40%;
         margin-left:10px;
         display:block;
         position:absolute;
         border-radius:10px;
+        border:none;
+          outline:none;
     }
 #depo{
           margin-left:10px;
@@ -274,6 +285,9 @@ h5 {
           background:;
           padding:2;
           color:whit;
+          border:none;
+          outline:none;
+          border-decoration:green;
     }
 #sacar {
         margin-left:10px;
@@ -283,6 +297,9 @@ h5 {
           background:;
           padding:2;
           color:whit;
+          border:none;
+          outline:none;
+          border-decoration:green;
     }
 d {
         margin-left:10%;
@@ -310,6 +327,7 @@ button {
         width:70px;
         height:60px;
         border-radius:50%;
+        
         
     }
 z {text-align:center;
